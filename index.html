@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="library-logo-title-container">
+            <svg class="library-logo" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M17.15 27H28.4v-3H17.15Zm0-4.5H36.9v-3H17.15Zm0-4.5H36.9v-3H17.15ZM13 38q-1.2 0-2.1-.9-.9-.9-.9-2.1V7q0-1.2.9-2.1.9-.9 2.1-.9h28q1.2 0 2.1.9.9.9.9 2.1v28q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h28V7H13v28Zm-6 9q-1.2 0-2.1-.9Q4 42.2 4 41V10h3v31h31v3Zm6-37v28V7Z"/></svg>
+            <div class="library-title">
+                Your Library
+            </div>
+        </div>
+        <div class="create-container">
+            <button class="create-book">New Book</button>
+        </div>
+    </div>
+
+    <div class="book-overlay">
+        <div class="form-container">
+            <form action="" method="get" id="book-form" autocomplete="off">
+                <label for="title">Book Title: <span class="required-mark">*</span></label>
+                <input type="text" id="title" name="title" placeholder="Lord Of The Flies" required>
+                <label for="author">Author: <span class="required-mark">*</span></label>
+                <input type="text" id="author" name="author" placeholder="William Golding" required>
+                <label for="pages">Pages: <span class="required-mark">*</span></label>
+                <input type="number" id="pages" name="pages" placeholder="224" required>
+                <div class="read-check-box">
+                    <label for="readAlready">Read: </label>
+                    <input type="checkbox" id="readAlready" name="readAlready">
+                </div>
+                <button type="button" class="submit-button">Submit</button>
+                <div class="form-bottom-description">
+                    Upon submitting, a new book will be created and displayed on the web page.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="books-container">
+        <div class="books-grid"></div>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
